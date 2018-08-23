@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display');
+@font-face {
+    font-family: League Spartan;
+    src: url("LeagueSpartan-Bold.otf") format("opentype");
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+}
+@media only screen and (min-device-width: 1000px) {
+.container-fluid {
+	width: 73%;
+}
+}
+button {
+  color: #777;
+	background: #fff;
+  padding: 4px 12px 4px 12px;
+  border: solid #777 2px;
+	transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+button:hover {
+	color: #000;
+	border: solid #000 2px;
+  text-decoration: none;
+}
+
+input, textarea {
+	font-size: 0.8rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 0.5rem 0.7rem;
+	margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+
+}
+
+input:focus, textarea:focus {
+  border-color: #777;
+  outline: none;
+}
+
+.portfolio-content {
+	line-height: 2;
+	color: #555;
+}
+
+.portfolio-content a {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px solid #bbb;
+}
+
+.portfolio-content a:hover {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #555;
+}
+
+h1, h2, h3 {
+	font-family: 'Playfair Display', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.navbar-brand {
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 800;
+	font-size: 1.5rem;
+	letter-spacing: 0.5px;
+	border-bottom: 4px dotted orange;
+	padding-bottom: 0;
+}
+
+.navbar {
+	text-transform: uppercase;
+}
+
+.nav-item {
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+}
+
+.navbar-toggler {
+	border: 0;
+}
+
+.navbar-toggler-right {
+	right: 0rem;
+}
+
+.portfolio-img {
+	width: 100%;
+	max-height: 340px;
+	display: block;
+	object-fit: cover;
+	//object-fit: contain;
+}
+
+.project-img {
+	width: 100%;
+	//max-height: 350px;
+	display: block;
+	object-fit: cover;
+}
+
+/* Image Hover Effect */
+
+.hovereffect {
+	width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.hovereffect .overlay {
+	width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect .overlay-text {
+	font-size: 1.3rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.5);
+	left: 150px;
+	position: absolute;
+	top: 84%;
+	width: 300px;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  margin:0;
+  background: rgb(255,255,255);
+  letter-spacing: 0.5px;
+}
+
+.hovereffect:hover .overlay-text {
+	 opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.hovereffect video {
+  display: block;
+  position: relative;
+  max-width: none;
+	width: 100%;
+	height: 100%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.95s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 1;
+  transform: scale(1.1);
+ 
+  	
+}
+
+.hovereffect:hover video {
+	opacity: 1;
+  filter: alpha(opacity=100);
+   transition: color 150ms linear,transform 0.35s;
+   transform: scale(1);
+ object-fit: cover;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+/* @media only screen and (max-device-width: 767px) { */
+/* video{ */
+/* display: none !important;} */
+    /* } */
+@media only screen and (min-device-width: 768px) {
+.index-img{
+display: none;}
+    }
+	
+@media only screen and (min-device-width: 576px) {
+.post-img{
+display:none
+}
+    }
+.page-nav {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.page-nav a,span {
+	font-size: 1.3rem;
+	font-family: 'Crimson Text', sans-serif;
+	font-weight: 300;
+	margin: 0 10px;
+	color: #000;
+}
+
+.bottom-text{
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+.hovereffect h5 {
+	font-family: sofia-pro, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.05rem;
+	line-height: 1.9;
+	text-transform: none;
+	color: #333;
+	text-align: left;
+}
+.hovereffect:hover h5 {
+	color: #000;
+	transition: color 200ms linear;
+}
+.hovereffect:hover a {
+	text-decoration:none;
+}
+.card{
+padding:20px;}
