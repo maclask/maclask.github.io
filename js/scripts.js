@@ -11,6 +11,7 @@ function hideVideo(e) {
 
 $(document).ready(function(){
 	$('video').bgVideo();
+	  $('.navbar-nav li:last-child a').attr('target', '_blank');
 });
 
 
