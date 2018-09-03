@@ -195,7 +195,8 @@ video::-webkit-media-controls {
     /* } */
 @media only screen and (min-device-width: 768px) {
 .index-img{
-display: none;}
+//display: none;
+position:absolute;}
     }
 	
 @media only screen and (min-device-width: 576px) {
